@@ -1,18 +1,8 @@
 import os
-import math
-import glob
 
 import cv2
-import torch.utils.data.dataloader as dataloader
-import numpy as np
-from torchvision import datasets
-import torchvision.transforms as transforms
-from torch.utils.data.sampler import SubsetRandomSampler
-from torch.utils.data import random_split
 import imgaug.augmenters as iaa
 from tqdm import tqdm
-
-from utils_dataset import AnimalDataset
 
 num_workers = 0
 

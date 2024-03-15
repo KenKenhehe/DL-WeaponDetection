@@ -1,4 +1,3 @@
-import util_dls
 from util_dls import predict
 import torch.nn as nn
 from torchvision.models import vgg16

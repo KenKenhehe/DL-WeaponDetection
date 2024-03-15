@@ -136,7 +136,7 @@ def train(model: torch.nn.Module,
         if validation_loss < validation_loss_min:
             print(f"Validation loss decreased ({validation_loss_min} --> {validation_loss}).  Saving model ...")
             
-            torch.save(model.state_dict(), f"animal_model_{type(model).__name__}.pt")
+            torch.save(model.state_dict(), f"weapon_detection_model_{type(model).__name__}.pt")
             validation_loss_min = validation_loss
 
         print(f"Epoch: {epoch+1} \tTraining Loss: {train_loss}. Validation Loss: {validation_loss}")

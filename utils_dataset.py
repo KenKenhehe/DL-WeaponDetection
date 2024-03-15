@@ -1,5 +1,4 @@
 from torch.utils.data import Dataset
-import cv2
 
 class WeaponDetectionDataset(Dataset):
     def __init__(self, file_list:list, transform = None, target_transform = None):
